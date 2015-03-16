@@ -1,0 +1,11 @@
+# English strings go here for Rails i18n
+en:
+  redmine_fetch_email_feedback:
+    setting:
+      enabled: "Enabled"
+    mail:
+      succeeded: "Message successfully received."
+      failed: "Message can not be processed."
+      log: "Feedback:"
+    
+  # my_label: "My label"

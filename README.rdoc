@@ -1,0 +1,12 @@
+= fetch_email_feedback
+
+Redmine plugin to send feedback when fetch email finished,
+so sender will know what is happening.
+It will send MailHandler log information back to sender when something goes wrong.
+
+You should enable it in plugin configuration first.
+
+
+
+
+

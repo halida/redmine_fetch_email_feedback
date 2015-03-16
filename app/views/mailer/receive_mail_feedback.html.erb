@@ -1,0 +1,9 @@
+<p>
+  <%= l "redmine_fetch_email_feedback.mail.#{ @result ? 'succeeded' : 'failed' }" %>
+</p>
+
+<% if @log.present? %>
+<p><%= l "redmine_fetch_email_feedback.mail.log" %></p>
+<pre><%= @log %></pre>
+<% end %>
+
