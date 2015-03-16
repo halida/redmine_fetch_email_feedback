@@ -15,6 +15,7 @@ Redmine::Plugin.register :redmine_fetch_email_feedback do
 
   settings default: {
              enabled: false,
+             placeholder: 'true', # fix empty settings bug
            }, partial: 'settings/redmine_fetch_email_feedback_settings'
 
 end

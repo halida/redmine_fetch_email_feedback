@@ -2,3 +2,5 @@
   <%= label_tag "settings[enabled]", l("redmine_fetch_email_feedback.setting.enabled") %>
   <%= check_box_tag "settings[enabled]", 1, @settings[:enabled] %>
 </p>
+
+<%= hidden_field_tag "settings[placeholder]", @settings[:placeholder] %>
