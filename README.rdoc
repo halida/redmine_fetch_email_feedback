@@ -1,4 +1,4 @@
-= fetch_email_feedback
+= redmine_fetch_email_feedback
 
 Redmine plugin to send feedback when fetch email finished,
 so sender will know what is happening.
