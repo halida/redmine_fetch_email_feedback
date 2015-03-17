@@ -1,6 +1,11 @@
-<%= l "redmine_fetch_email_feedback.mail.#{ @result ? 'succeeded' : 'failed' }" %>
+<%= l "redmine_fetch_email_feedback.mail.#{ @data[:result] ? 'succeeded' : 'failed' }" %>
 
-<% if @log.present? %>
+<% if result = @data[:result] and result.kind_of? Issue %>
+<%= l "redmine_fetch_email_feedback.mail.issue" %>
+<%= link_to result.subject, issue_url(result) %>
+<% end %>
+
+<% if @data[:log].present? %>
 <%= l "redmine_fetch_email_feedback..mail.log" %>
-<%= @log %>
+<%= @data[:log] %>
 <% end %>

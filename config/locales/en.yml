@@ -6,6 +6,7 @@ en:
     mail:
       succeeded: "Message successfully received."
       failed: "Message can not be processed."
+      issue: "Created issue: "
       log: "Feedback:"
     
   # my_label: "My label"

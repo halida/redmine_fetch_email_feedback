@@ -45,7 +45,7 @@ module RedmineFetchEmailFeedback
       
       if Setting.plugin_redmine_fetch_email_feedback[:enabled] and # enabled
         sender != Setting.mail_from.try(:strip) # feedback should not send to self
-        Mailer.receive_mail_feedback(sender, subject, result, log).deliver
+        Mailer.receive_mail_feedback(email: sender, subject: subject, result: result, log: log).deliver
       end
       result
     end
